@@ -1,0 +1,19 @@
+{
+  "name": "cpreact",
+  "version": "1.0.0",
+  "description": "类react框架实现",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adxc/cpreact.git"
+  },
+  "author": "andyxic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adxc/cpreact/issues"
+  },
+  "homepage": "https://github.com/adxc/cpreact#readme"
+}
