@@ -1,6 +1,7 @@
 import resolve from 'rollup-plugin-node-resolve';
 import babel from 'rollup-plugin-babel';
 import serve from 'rollup-plugin-serve'
+import commonjs from 'rollup-plugin-commonjs';
 
 export default {
 // 核心选项
@@ -17,8 +18,12 @@ watch:{
 },
 plugins:[
     resolve(),
+    commonjs({
+        include: "node_modules/**"
+    }),
     babel({
-      exclude: 'node_modules/**' 
+        exclude: 'node_modules/**',
+        runtimeHelpers: true,
     }),
     serve({
         open:true,
